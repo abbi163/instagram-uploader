@@ -4,7 +4,7 @@ name: Daily Instagram Post
 on:
   schedule:
     # Runs at 09:00 UTC every day
-    - cron: '25 20 * * *'
+    - cron: '0 9 * * *'
 
   workflow_dispatch:  # Allows manual triggering of the workflow
 
