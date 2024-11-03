@@ -1,2 +1,6 @@
 instagrapi==2.1.2
+pandas==2.2.3
+Pillow==8.1.1
+moviepy==1.0.3
+datetime
 
