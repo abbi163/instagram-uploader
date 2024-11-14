@@ -3,8 +3,8 @@ name: Daily Instagram Post
 # Controls when the workflow will run
 on:
   schedule:
-    # Runs at 09:00 UTC every day
-    - cron: '0 9 * * *'
+    # Runs every 3 hours
+    - cron: '0 */3 * * *'
 
   workflow_dispatch:  # Allows manual triggering of the workflow
 
@@ -34,5 +34,6 @@ jobs:
         env:
           INSTAGRAM_USERNAME: ${{ secrets.INSTAGRAM_USERNAME }}
           INSTAGRAM_PASSWORD: ${{ secrets.INSTAGRAM_PASSWORD }}
+          GOOGLE_CREDENTIAL: ${{ secrets.GOOGLE_CREDENTIAL }}
         run: |
           python script.py
